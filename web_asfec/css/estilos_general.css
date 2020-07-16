@@ -1,0 +1,116 @@
+@charset "utf-8";
+/* CSS Document */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+@import url(menu.css);
+@import url(banner.css);
+
+@import url(servicios.css);
+@import url(form.css);
+
+
+body{
+	font-family: Gill Sans, Gill Sans MT, Myriad Pro, DejaVu Sans Condensed, Helvetica, Arial," sans-serif";
+}
+
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+
+header{
+	width:100%;
+	height:60px;
+	background-color: deepskyblue;
+	color:#fff;	
+	position:fixed;
+	top:0;
+	left:0;
+	z-index: 100;
+	border-bottom:solid 1.5px black;
+}
+
+.contenedor{
+	width:98%;
+	margin:auto;
+}
+
+section{
+	width:100%;
+	margin-bottom: 25px;
+}
+
+
+
+
+/**{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;	
+}*/
+
+/*box sizing "border-box" es para que todo se contenga dentro de un modelo de caja cuando se altera el padding o margin del contenido*/
+
+/*body{
+	font-family: 'Open Sans', sans-serif;
+
+}
+
+header{
+	width:100%;
+	height:50px;
+	background-color:#333;
+	color:#fff;
+	
+	position:fixed;
+	top:0;
+	left:0;
+	z-index:100;	
+}*/
+
+/*z index es para colocar delante de los demás elementos el header, en este caso*/
+
+/*.contenedor{
+	width:98%;
+	margin:auto;
+}*/
+
+/*el width del contenedor es de 98% para que todos los contenedores utilizados en la página estén alineados*/
+
+footer{
+	margin-top: 30px;
+}
+
+footer .contenedor{
+	display: flex;
+	flex-wrap:wrap;
+	justify-content: center;
+	padding-bottom: 25px;
+	font-family: Gotham, Helvetica Neue, Helvetica, Arial,' sans-serif';
+}
+
+.copy{
+	font-size: 20px;	
+	color: #333;
+}
+
+.sociales{
+	width:100%;
+	text-align:center;
+	font-size: 28px;
+}
+
+.sociales a{
+	color:#333;
+	text-decoration: none;
+}
+
+@media (min-width:768px){
+	.sociales{
+		width:auto;
+	}
+	footer .contenedor{
+		justify-content:space-between; 
+	}
+}
